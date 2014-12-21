@@ -229,15 +229,79 @@ a.destination{
 }
 
 div.content{
+    display: block;
     position: relative;
     left: 0;
     top: 263px;
     margin-top: 29px;
+    font-family: Arial;
+    font-size: 12px;
+    line-height: 17px;
+    font-weight: 400;
+    color:#555555;
+}
+
+span.bold{
+    font-weight: 700;
 }
 
 span.title{
+    display: block;
     line-height: 0;
     font-family: TitilliumWeb;
     font-size: 33px;
     font-weight: 400;
+    color: #000000;
+    margin-bottom: 50px;
+}
+
+div.content article{
+    float: left;
+    width: 680px;
+    margin-top: 13px;
+    margin-left: 44px;
+}
+
+div.side-menu{
+    float: left;
+    width: 220px;
+}
+
+div.side-menu ul{
+    display: table;
+    margin: 0;
+    padding: 0;
+}
+
+div.side-menu ul li{
+    display: table-row;
+}
+
+div.side-menu ul li a{
+    display: block;
+    margin-bottom: 3px;
+    font-size: 14px;
+    height: 45px;
+    width: 220px;
+    background-color: #dbd9d9;
+    border-radius: 3px;
+    line-height: 45px;
+    padding-left: 20px;
+}
+
+div.side-menu ul li a:hover{
+    background: url(images/hover-background.png);
+    color: #ffffff;
+}
+
+hr{
+    margin: 0;
+    border: none;
+    margin-top: 1px;
+    border-bottom: 1px double #dbd9d9;
+}
+
+div.lines{
+    display: block;
+    margin-top: 45px;
 }
