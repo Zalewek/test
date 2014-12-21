@@ -119,6 +119,39 @@ div.main-menu{
     width: 100%;
 }
 
+div.menu{
+    margin: 0 auto;
+    width: 941px;
+}
+
+div.menu ul{
+    display: table;
+    width: 999px;
+    padding: 0;
+    margin: 0;
+    line-height: 75px;
+    margin-left: -33px;
+}
+
+div.menu ul li{
+    display: table-cell;
+    text-align: center;
+}
+
+div.menu ul li a{
+    padding:  5px 10px;
+    font-family: TitilliumWeb;
+    color: #dc6b2d;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+div.menu ul li a:hover{
+    background: url(images/hover.png);
+    border-radius: 5px;
+    color: #ffffff;
+}
+
 div.navi-bar{
     position: absolute;
     left: 0;
@@ -130,6 +163,69 @@ div.navi-bar{
     width: 100%;
     background-color: #f5f5f5;
     border-top: 1px solid #cecdcd;
+}
+
+div.navigate{
+    margin: 0 auto;
+    width: 944px;
+    font-family: TitilliumWeb;
+    font-size: 11px;
+    line-height: 45px;
+    color: #888888;
+}
+
+div.location{
+    float: left;
+}
+
+div.version ul{
+    display: table;
+    margin: 0;
+    padding: 0;
+    float: right;
+    margin-right: 55px;
+}
+
+div.version ul li{
+    display: table-cell;
+}
+
+div.version ul li a{
+    padding: 4px 8px;
+    border: 1px solid #f5f5f5;
+    color: #888888;
+}
+
+div.version ul li a:hover{
+    border-radius: 3px;
+    border: 1px solid #d0cfcf;
+    background-color: #ffffff;
+    
+}
+
+div.language{
+    float: right;
+}
+
+a.flag{
+    margin: 13px 0 0 6px;
+    display: block;
+    float: right;
+    background: url(images/Vector-Smart-Object.png) no-repeat center center;  
+    background-size: 100% 100%;
+    height: 20px;
+    width: 22px;
+    text-indent: -99em;
+    
+}
+
+a.flag:hover{
+    background: url(images/Vector-Smart-Object-Hover.png)
+}
+
+a.destination{
+    color: #393939;
+    margin-left: 3px;
 }
 
 div.content{
