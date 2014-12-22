@@ -26,9 +26,9 @@ body{
 }
 
 .header{
-    position: absolute;
-    left: 0;
-    top: 0;
+    float: left;
+    margin: 0;
+    padding: 0;
     height: 136px;
     width: 100%;
     background: url(images/Background.png);
@@ -109,9 +109,7 @@ a.submit-button:hover{
 
 
 div.main-menu{
-    position: absolute;
-    left: 0;
-    top: 138px;
+    float: left;
     display: block;
     float: left;
     clear: both;
@@ -153,9 +151,6 @@ div.menu ul li a:hover{
 }
 
 div.navi-bar{
-    position: absolute;
-    left: 0;
-    top: 220px;
     display: block;
     float: left;
     clear: both;
@@ -230,12 +225,10 @@ a.destination{
 
 div.content{
     display: block;
-    position: relative;
-    left: 0;
-    top: 263px;
-    margin-top: 29px;
+    float: left;
     font-family: Arial;
     font-size: 12px;
+    margin-top: 28px;
     line-height: 17px;
     font-weight: 400;
     color:#555555;
@@ -263,6 +256,7 @@ div.content article{
 }
 
 div.side-menu{
+    display: block;
     float: left;
     width: 220px;
 }
@@ -304,4 +298,12 @@ hr{
 div.lines{
     display: block;
     margin-top: 45px;
+}
+
+div.footer{
+    display: block;
+    background-color: #d9d7d7;
+    height: 266px;
+    width: 100%;
+    float: left;
 }
