@@ -1,7 +1,14 @@
 @font-face {
     font-family: 'TitilliumWeb';
+    src: url('fonts/titillium-semibold-webfont.eot');
+    src: url('fonts/titillium-semibold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/titillium-semibold-webfont.woff2') format('woff2'),
+         url('fonts/titillium-semibold-webfont.woff') format('woff'),
+         url('fonts/titillium-semibold-webfont.ttf') format('truetype'),
+         url('fonts/titillium-semibold-webfont.svg#titilliumbold') format('svg');
+    font-weight: normal;
     font-style: normal;
-    src: local('Titillium WebSemiBold'), local('TitilliumWeb-SemiBold'), url(http://themes.googleusercontent.com/static/fonts/titilliumweb/v1/anMUvcNT0H1YN4FII8wprx7IBmrqA5IG9z8WNe77b9o.woff) format('woff');
+
 }
 
 a, a:active, a:visited,a:hover{
@@ -72,6 +79,8 @@ div.top-menu-links{
     height: 24px;
     padding: 6px 14px 6px 14px;
     border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
 }
 
 form{
@@ -119,16 +128,16 @@ div.main-menu{
 
 div.menu{
     margin: 0 auto;
-    width: 941px;
+    width: 944px;
 }
 
 div.menu ul{
     display: table;
-    width: 999px;
+    width: 979px;
     padding: 0;
     margin: 0;
     line-height: 75px;
-    margin-left: -33px;
+    margin-left: -20px;
 }
 
 div.menu ul li{
@@ -139,6 +148,7 @@ div.menu ul li{
 div.menu ul li a{
     padding:  5px 10px;
     font-family: TitilliumWeb;
+    text-transform: uppercase;
     color: #dc6b2d;
     font-size: 14px;
     font-weight: 400;
@@ -147,6 +157,8 @@ div.menu ul li a{
 div.menu ul li a:hover{
     background: url(images/hover.png);
     border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
     color: #ffffff;
 }
 
@@ -193,6 +205,8 @@ div.version ul li a{
 
 div.version ul li a:hover{
     border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
     border: 1px solid #d0cfcf;
     background-color: #ffffff;
     
@@ -268,19 +282,25 @@ div.side-menu ul{
 }
 
 div.side-menu ul li{
-    display: table-row;
+    display: block;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    margin-bottom: 3px;
 }
 
 div.side-menu ul li a{
-    display: block;
-    margin-bottom: 3px;
+    display: table-cell;
     font-size: 14px;
     height: 45px;
-    width: 220px;
+    width: 170px;
     background-color: #dbd9d9;
     border-radius: 3px;
-    line-height: 45px;
-    padding-left: 20px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    vertical-align: middle;
+    padding-left: 25px;
+    padding-right: 25px;
 }
 
 div.side-menu ul li a:hover{
@@ -306,4 +326,101 @@ div.footer{
     height: 266px;
     width: 100%;
     float: left;
+}
+
+div.footer-wrap{
+    width: 944px;
+    margin: 0 auto;
+}
+
+div.footer ul.bot-menu{
+    display: table;
+    padding: 0;
+    margin: 28px auto;
+    font-size: 13px;
+    text-transform: uppercase;
+}
+
+div.footer ul.bot-menu li{
+    color: #424242;
+    display: inline;
+    padding: 0;
+    margin: 0;
+}
+
+div.footer ul.bot-menu li a{
+    margin-right: 5px;
+    margin-left: 5px;
+}
+
+div.footer ul.bot-menu li a:hover{
+    color: #ffffff;
+}
+
+ul.footer-copyrights{
+    display: table;
+    height: 26px;
+    padding: 0;
+    font-size: 12px;
+    font-family: Arial;
+    font-weight: 400;
+    color: #9e9d9d;
+    float: left;
+}
+
+li.copyright{
+    display: table-cell;
+    vertical-align: middle;
+}
+
+li.copyright img{
+    margin-left: 10px;
+}
+
+ul.footer-links{
+    display: table;
+    height: 28px;
+    padding: 0;
+    float: right;
+}
+
+li.footer-link{
+    display: table-cell;
+    vertical-align: middle;
+    font-size: 12px;
+    font-family: Arial;
+    font-weight: 400;
+    color: #9e9d9d;
+}
+
+li.footer-link a{
+    vertical-align: middle;
+    font-size: 12px;
+    font-family: Arial;
+    font-weight: 400;
+    color: #9e9d9d;
+}
+
+a.rss{
+    display: block;
+    background: url(images/rss.png) no-repeat center center;
+    background-size: 100% 100%;
+    height: 28px;
+    width: 28px;
+    text-indent: -999em;
+    margin-left: 10px;
+}
+
+span.vertical-line{
+    margin: 0 5px;
+}
+
+li.validation{
+    display: table-cell;
+    vertical-align: middle;
+    padding-right: 10px;
+    font-weight: bold;
+    font-size: 12px;
+    font-family: Arial;
+    color: #9e9d9d;
 }
